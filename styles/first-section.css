@@ -1,0 +1,96 @@
+@import url("./variables.css");
+
+.first-section,
+.second-section,
+.third-section {
+  display: flex;
+  margin-top: 30px;
+  width: 100%;
+  height: 30%;
+}
+
+.first-section {
+  display: flex;
+  margin-top: 30px;
+  width: 100%;
+  height: var(--sections-height);
+}
+
+.first-section-left,
+.first-section-right {
+  width: 50%;
+  height: 100%;
+}
+
+.first-section-left img {
+  width: 100%;
+  height: 100%;
+}
+
+.first-section-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #006242;
+  color: white;
+  height: 100%;
+  gap: 40px;
+  padding: 5%;
+}
+
+.first-section-right h2 {
+  font-size: var(--sections-title-desktop); /* Tamaño de fuente base */
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center;
+  word-wrap: break-word; /* Evita desbordamientos */
+}
+
+.first-section-right p {
+  font-size: var(--sections-paragraph-desktop); /* Tamaño de fuente base */
+  font-weight: 400;
+  word-wrap: break-word; /* Evita desbordamientos */
+  text-align: center;
+}
+
+.first-section-right button {
+  background: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 99px;
+  padding: 10px 20px;
+  font-size: 1rem; /* Tamaño de fuente base */
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Pantallas medianas */
+@media (max-width: 768px) {
+  .first-section-right h2 {
+    font-size: 2rem;
+  }
+
+  .first-section-right p {
+    font-size: 1.25rem;
+  }
+
+  .first-section-right button {
+    font-size: 0.875rem;
+  }
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 480px) {
+  .first-section-right h2 {
+    font-size: 1.5rem;
+  }
+
+  .first-section-right p {
+    font-size: 1rem;
+  }
+
+  .first-section-right button {
+    font-size: 0.75rem;
+  }
+}

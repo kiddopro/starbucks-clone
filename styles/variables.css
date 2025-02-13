@@ -1,0 +1,13 @@
+:root {
+  --primary-spacing: 12.3%;
+  --sections-height: 68vh;
+  --sections-title-desktop: 3rem;
+  --sections-title-medium: 2rem;
+  --sections-title-small: 1.5rem;
+  --sections-paragraph-desktop: 1.5rem;
+  --sections-paragraph-medium: 1.25rem;
+  --sections-paragraph-small: 1rem;
+  --sections-button-desktop: 1rem;
+  --sections-button-medium: 0.875rem;
+  --sections-button-small: 0.75rem;
+}

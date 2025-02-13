@@ -1,0 +1,87 @@
+@import url("./variables.css");
+
+.third-section {
+  display: flex;
+  margin-top: 30px;
+  width: 100%;
+  height: 45vh;
+}
+
+.third-section-left,
+.third-section-right {
+  width: 50%;
+  height: 100%;
+}
+
+.third-section-left img {
+  width: 100%;
+  height: 100%;
+}
+
+.third-section-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #32472f;
+  color: white;
+  height: 100%;
+  gap: 40px;
+  padding: 5%;
+}
+
+.third-section-right h2 {
+  font-size: 1.5rem; /* Tamaño de fuente base */
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center;
+  word-wrap: break-word; /* Evita desbordamientos */
+}
+
+.third-section-right p {
+  font-size: 1.2rem; /* Tamaño de fuente base */
+  font-weight: 400;
+  word-wrap: break-word; /* Evita desbordamientos */
+  text-align: center;
+}
+
+.third-section-right button {
+  background: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 99px;
+  padding: 10px 20px;
+  font-size: var(--sections-button-desktop); /* Tamaño de fuente base */
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Pantallas medianas */
+@media (max-width: 768px) {
+  .third-section-right h2 {
+    font-size: 1rem;
+  }
+
+  .third-section-right p {
+    font-size: 0.85rem;
+  }
+
+  .third-section-right button {
+    font-size: 0.65rem;
+  }
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 480px) {
+  .third-section-right h2 {
+    font-size: 0.85rem;
+  }
+
+  .third-section-right p {
+    font-size: 0.65rem;
+  }
+
+  .third-section-right button {
+    font-size: 0.55rem;
+  }
+}

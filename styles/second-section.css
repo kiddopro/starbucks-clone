@@ -1,0 +1,74 @@
+@import url("./variables.css");
+
+.second-section {
+  display: flex;
+  margin-top: 30px;
+  width: 100%;
+  height: var(--sections-height);
+}
+
+.second-section-left,
+.second-section-right {
+  width: 50%;
+  height: 100%;
+}
+
+.second-section-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f3f0;
+  color: #32472f;
+  height: 100%;
+  gap: 40px;
+  padding: 5%;
+}
+
+.second-section-left h2 {
+  font-size: var(--sections-title-desktop); /* Tamaño de fuente base */
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center;
+  word-wrap: break-word; /* Evita desbordamientos */
+}
+
+.second-section-left p {
+  font-size: var(--sections-paragraph-desktop); /* Tamaño de fuente base */
+  font-weight: 400;
+  word-wrap: break-word; /* Evita desbordamientos */
+  text-align: center;
+  color: black;
+}
+
+.second-section-left a {
+  color: #007954;
+  text-decoration: underline;
+}
+
+.second-section-right img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Pantallas medianas */
+@media (max-width: 768px) {
+  .second-section-left h2 {
+    font-size: var(--sections-title-medium);
+  }
+
+  .second-section-left p {
+    font-size: var(--sections-paragraph-medium);
+  }
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 480px) {
+  .second-section-left h2 {
+    font-size: var(--sections-title-small);
+  }
+
+  .second-section-left p {
+    font-size: var(--sections-paragraph-small);
+  }
+}

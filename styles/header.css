@@ -1,0 +1,84 @@
+@import url("./variables.css");
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: rgb(0, 0, 0);
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 30px var(--primary-spacing);
+}
+
+.navbar-one ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.navbar-two ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.navbar-two li:nth-child(1)::before {
+  content: "\f3c5";
+  color: #000;
+  margin-right: 15px;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+.navbar-two li:nth-child(2),
+.navbar-two li:nth-child(3) {
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 99px;
+  padding: 10px 20px;
+}
+
+.navbar-two li:nth-child(3) {
+  background-color: black;
+  color: white;
+}
+
+.navbar-one li,
+.navbar-two li {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.navbar-one li,
+.navbar-two li {
+  cursor: pointer;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.navbar-one li:hover,
+.navbar-two li:hover {
+  color: #19825b;
+  transition: none;
+}
+
+.navbar-two li:nth-child(1):hover::before {
+  color: #19825b;
+}
+
+.navbar-one {
+  position: relative;
+}
+
+.navbar-one::before {
+  content: url("../img/logo.svg");
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -15px;
+  left: -80px;
+}
