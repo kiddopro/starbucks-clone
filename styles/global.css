@@ -15,7 +15,12 @@ body {
   font-style: normal;
 }
 
-main {
+main,
+footer {
   width: 75vw;
   margin: auto;
+}
+
+hr {
+  margin-top: 3em;
 }
