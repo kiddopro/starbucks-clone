@@ -40,6 +40,7 @@
 }
 
 .first-section-right h2 {
+  width: 80%;
   font-size: var(--sections-title-desktop); /* Tamaño de fuente base */
   font-weight: 600;
   letter-spacing: 2px;
@@ -48,10 +49,12 @@
 }
 
 .first-section-right p {
+  width: 80%;
   font-size: var(--sections-paragraph-desktop); /* Tamaño de fuente base */
   font-weight: 400;
   word-wrap: break-word; /* Evita desbordamientos */
   text-align: center;
+  text-wrap: balance;
 }
 
 .first-section-right button {

@@ -34,11 +34,13 @@
 }
 
 .second-section-left p {
+  width: 85%;
   font-size: var(--sections-paragraph-desktop); /* Tamaño de fuente base */
   font-weight: 400;
   word-wrap: break-word; /* Evita desbordamientos */
   text-align: center;
   color: black;
+  text-wrap: stable;
 }
 
 .second-section-left a {

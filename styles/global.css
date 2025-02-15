@@ -16,5 +16,6 @@ body {
 }
 
 main {
-  margin: 0 var(--primary-spacing);
+  width: 75vw;
+  margin: auto;
 }
